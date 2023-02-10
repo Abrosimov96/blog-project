@@ -8,7 +8,7 @@ interface SidebarProps {
   className?: string;
 }
 
-export const Sidebar = ({className}: SidebarProps) => {
+export const Sidebar = ({ className }: SidebarProps) => {
 
   const [collapsed, setCollapsed] = React.useState(false)
 
@@ -17,13 +17,18 @@ export const Sidebar = ({className}: SidebarProps) => {
   }
 
   return (
-    <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed } , [className])} >
+    <div className={
+      classNames(
+        cls.Sidebar,
+        { [cls.collapsed]: collapsed },
+        [className]
+      )} >
       <button onClick={onToggle}>
         toggle
       </button>
       <div className={cls.switchers}>
         <ThemeSwicher />
-        <LangSwitcher className={cls.lang}/>
+        <LangSwitcher className={cls.lang} />
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 {
-    "Language": "English",
-    "Main" : "Main Page",
-    "About Us": "About Us"
+  "Language": "English",
+  "Main": "Main Page",
+  "About Us": "About Us",
+  "Toggle": "Toggle"
 }
