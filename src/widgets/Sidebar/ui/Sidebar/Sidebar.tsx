@@ -1,3 +1,4 @@
+import { t } from 'i18next'
 import React from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { LangSwitcher } from 'widgets/LangSwitcher/LangSwitcher'
@@ -24,7 +25,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         [className]
       )} >
       <button onClick={onToggle}>
-        toggle
+        {t('Toggle')}
       </button>
       <div className={cls.switchers}>
         <ThemeSwicher />
