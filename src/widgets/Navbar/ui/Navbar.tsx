@@ -9,24 +9,24 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
-  const { t } = useTranslation()
-  return (
-    <div className={classNames(cls.Navbar, {}, [className])}>
-      <div className={cls.links}>
-        <AppLink
-          theme={AppLinkTheme.INVERTED}
-          to={'/'}
-          className={cls.mainLink}
-        >
-          {t('Main')}
-        </AppLink>
-        <AppLink
-          theme={AppLinkTheme.INVERTED}
-          to={'/about'}
-        >
-          {t('About Us')}
-        </AppLink>
-      </div>
-    </div>
-  )
+    const { t } = useTranslation()
+    return (
+        <div className={classNames(cls.Navbar, {}, [className])}>
+            <div className={cls.links}>
+                <AppLink
+                    theme={AppLinkTheme.INVERTED}
+                    to={'/'}
+                    className={cls.mainLink}
+                >
+                    {t('Main')}
+                </AppLink>
+                <AppLink
+                    theme={AppLinkTheme.INVERTED}
+                    to={'/about'}
+                >
+                    {t('About Us')}
+                </AppLink>
+            </div>
+        </div>
+    )
 }
