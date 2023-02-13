@@ -4,15 +4,15 @@ import { useTheme } from './providers/ThemeProvider'
 import { AppRouter } from './providers/router'
 import { Navbar } from 'widgets/Navbar'
 import { Sidebar } from 'widgets/Sidebar'
-import { Suspense } from 'react'
+import { Suspense, useEffect } from 'react'
 
 
 export const App = () => {
-    const {theme} = useTheme()
-  
+    const { theme } = useTheme();
+
     return (
-    
-        <div className={classNames('app',{}, [theme])}>
+
+        <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar />
                 <div className='content-page'>
@@ -21,8 +21,8 @@ export const App = () => {
                 </div>
             </Suspense>
         </div>
-    
-    
+
+
     )
 }
 
