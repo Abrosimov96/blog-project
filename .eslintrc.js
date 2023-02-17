@@ -3,18 +3,18 @@ module.exports = {
         browser: true,
         es2021: true,
         node: true,
-        jest: true,
+        jest: true
     },
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended'
-    ],
+        'plugin:@typescript-eslint/recommended',
+        'plugin:storybook/recommended'],
     overrides: [],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module',
+        sourceType: 'module'
     },
     plugins: ['react', '@typescript-eslint', 'i18next'],
     rules: {
@@ -22,9 +22,13 @@ module.exports = {
         'react/jsx-indent': [2, 4],
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],
+        'react/display-name': 'off',
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/ban-ts-comment': 'warn',
         'no-unused-vars': 'warn',
-        'max-len': ['error', { ignoreComments: true, code: 100 }]
-    },
+        'max-len': ['error', {
+            ignoreComments: true,
+            code: 100
+        }]
+    }
 };
