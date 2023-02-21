@@ -1,9 +1,10 @@
 {
-  "Language": "English",
-  "Main": "Main Page",
-  "About Us": "About Us",
-  "Page not found!": "Page not found!",
-  "Something went wrong": "Something went wrong",
-  "Refresh page!": "Refresh page!",
-  "Short Language": "En"
+    "Language": "English",
+    "Main": "Main Page",
+    "About Us": "About Us",
+    "Page not found!": "Page not found!",
+    "Something went wrong": "Something went wrong",
+    "Refresh page!": "Refresh page!",
+    "Short Language": "En",
+    "Log in": "Log in"
 }
