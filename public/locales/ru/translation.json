@@ -6,5 +6,7 @@
     "Something went wrong": "Упс, что-то не так",
     "Refresh page!": "Обновить страницу!",
     "Short Language": "Ру",
-    "Log in": "Вход"
+    "Log in": "Вход",
+    "increment": "увеличить",
+    "decrement": "уменьшить"
 }
